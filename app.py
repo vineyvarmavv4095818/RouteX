@@ -6,9 +6,6 @@ import os
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-# Folder names are capitalised in this project (Templates, Static, Data).
-# Pointing Flask at them explicitly makes the app work on Linux too,
-# where file names are case-sensitive.
 app = Flask(
     __name__,
     template_folder=os.path.join(BASE_DIR, "Templates"),
